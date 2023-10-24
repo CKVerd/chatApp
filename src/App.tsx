@@ -1,10 +1,10 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-ignore
 import './App.css'
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/firestore'
 import 'firebase/compat/auth'
 import { useAuthState } from 'react-firebase-hooks/auth'
-import { useCollectionData } from 'react-firebase-hooks/firestore'
-import { useEffect, useState } from 'react'
 import SignIn from './assets/components/SignIn'
 import ChatRoom from './assets/components/ChatRoom'
 
@@ -20,7 +20,7 @@ const auth = firebase.auth()
 const firestore = firebase.firestore()
 
 function App() {
-  const [user]: any = useAuthState(auth)
+  const [user] = useAuthState(auth)
   return (
     <>
       <div>{user ? <ChatRoom user={user} auth={auth} firestore={firestore} /> : <SignIn auth={auth} />}</div>

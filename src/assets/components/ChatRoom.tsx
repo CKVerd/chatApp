@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react'
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-ignore
+import { useState } from 'react'
 import { useCollectionData } from 'react-firebase-hooks/firestore'
 import firebase from 'firebase/compat/app'
 
