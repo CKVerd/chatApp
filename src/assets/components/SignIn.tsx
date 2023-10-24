@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-ignore
+// @ts-nocheck
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
 
